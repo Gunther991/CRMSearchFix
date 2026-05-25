@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CRM Search Fix</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <header class="header">
+        <div>
+          <h1>CRM Search Fix</h1>
+          <p id="currentHost">Загрузка сайта...</p>
+        </div>
+        <label class="switch" title="Включить расширение">
+          <input id="enabled" type="checkbox" />
+          <span></span>
+        </label>
+      </header>
+
+      <section class="section">
+        <button id="addCurrentSite" class="primary" type="button">Включить для этого сайта</button>
+        <button id="removeCurrentSite" class="secondary" type="button">Убрать этот сайт</button>
+      </section>
+
+      <section class="section">
+        <label for="sites">Сайты</label>
+        <textarea id="sites" spellcheck="false" placeholder="example.com&#10;search.example.com"></textarea>
+      </section>
+
+      <section class="section">
+        <label for="searchSelector">Поле, которое запускает поиск</label>
+        <input id="searchSelector" type="text" spellcheck="false" />
+        <button id="useLastFocusedField" class="secondary" type="button">Взять последнее активное поле</button>
+      </section>
+
+      <section class="section inline">
+        <input id="blockOnlyEmptyArea" type="checkbox" />
+        <label for="blockOnlyEmptyArea">Блокировать только клики по пустому месту</label>
+      </section>
+
+      <section class="section inline">
+        <input id="blockBlurEvents" type="checkbox" />
+        <label for="blockBlurEvents">Блокировать уход из поля: blur, focusout, change</label>
+      </section>
+
+      <section class="section inline">
+        <input id="searchOnEnter" type="checkbox" />
+        <label for="searchOnEnter">Запускать поиск по Enter</label>
+      </section>
+
+      <section class="section inline">
+        <input id="debug" type="checkbox" />
+        <label for="debug">Писать диагностику в консоль страницы</label>
+      </section>
+
+      <p id="status" class="status" role="status"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
