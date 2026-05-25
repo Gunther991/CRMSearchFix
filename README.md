@@ -2,6 +2,13 @@
 
 Chrome extension that blocks CRM fields from launching automatic search when focus leaves a field. Search can be triggered manually with Enter.
 
+## Установка
+
+1. Откройте `chrome://extensions`.
+2. Включите `Режим разработчика`.
+3. Нажмите `Загрузить распакованное расширение`.
+4. Выберите распакованную папку из архива CRM Search Fix.
+
 ## Install
 
 1. Open `chrome://extensions`.
