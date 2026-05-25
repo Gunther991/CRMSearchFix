@@ -7,7 +7,7 @@ Chrome extension that blocks CRM fields from launching automatic search when foc
 1. Open `chrome://extensions`.
 2. Enable `Developer mode`.
 3. Click `Load unpacked`.
-4. Select this folder: `/Users/a74/Documents/New project 2`.
+4. Select the `unpacked folder` from the CRM Search Fix archive.
 
 ## Use
 
